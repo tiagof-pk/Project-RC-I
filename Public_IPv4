@@ -1,36 +1,41 @@
-117823
-1ABCDE
+
+
 IPv4 Public: 201.123.017.0/24 :
 
-	64 - 50 servers --> NEWNETCenter X 	 00-64    (64)
-	xx - 16 PCs --> NewNetIT           	 64-96    (32)
-	32 - 22 servers/PCs -->GR8 Office X 	 98-128   (32)
-	xx - 9 NATPAT --> GR8              	 128-160  (32)
-	32 - 20 NATPAT --> Amazing 		 160-192  (32)
-	64 - 60 servers/PCs --> Amazing Office   192-256  (64)
+	64 - 50 servers --> NEWNETCenter X 	 00 - 64  (64) 26
+	64 - 60 servers/PCs --> Amazing Office   64 -128  (64) 26
+	32 - 16 PCs --> NewNetIT           	 128-160  (32) 27
+	32 - 22 servers/PCs -->GR8 Office X 	 160-192  (32) 27
+	32 - 20 NATPAT --> Amazing 		 192-224  (32) 27 
+	16 - 9 NATPAT --> GR8              	 224-240  (16) 28
+	4  - 2 Interconnection NN - AMAZING	 240-244  (4)  30
+	4  - 2 Interconnection NN - GR8		 244-248  (4)  30
+
+							  (240)
+
 							  (256)
 
 --------------------------TABLE---------------------------------
 	
-NEWNET
+NEWNET bISP
 
 	NewNetCenter-
 	
 		Network Address    : 201.123.017.0
-		Mask		   : 24
+		Mask		   : 26
 		Broadcast Address  : 201.123.017.63
-		Avaiable Addresses : 201.123.017.1/24 - 201.123.017.62/24 
-		Used Addresses	   : 201.123.017.1/24 - 201.123.017.50/24 
+		Avaiable Addresses : 201.123.017.1 - 201.123.017.62
+		Used Addresses	   : 201.123.017.1 - 201.123.017.50
 		Gateway #1	   : 
 		Gateway #2	   :
 	
 	NewNetIT 	
 	
-		Network Address    : 201.123.017.64
-		Mask		   : 24
-		Broadcast Address  : 201.123.017.95
-		Avaiable Addresses : 201.123.017.65/24 - 201.123.017.94/24 
-		Used Addresses	   : 201.123.017.65/24 - 201.123.017.80/24 
+		Network Address    : 201.123.017.128
+		Mask		   : 27
+		Broadcast Address  : 201.123.017.159
+		Avaiable Addresses : 201.123.017.129 - 201.123.017.158
+		Used Addresses	   : 201.123.017.129 - 201.123.017.145
 		Gateway #1	   :
 		Gateway #2	   :
 
@@ -38,11 +43,11 @@ Amazing
 
 	Offices 
 		
-		Network Address    : 201.123.017.192
-		Mask		   : 24
-		Broadcast Address  : 201.123.017.255
-		Avaiable Addresses : 201.123.017.193/24 - 201.123.017.254/24
-		Used Addresses	   : 201.123.017.193/24 - 201.123.017.252/24
+		Network Address    : 201.123.017.64
+		Mask		   : 26
+		Broadcast Address  : 201.123.017.127
+		Avaiable Addresses : 201.123.017.65 - 201.123.017.126
+		Used Addresses	   : 201.123.017.65 - 201.123.017.125
 		Gateway #1	   :
 		Gateway #2	   :
 	
@@ -68,11 +73,11 @@ Amazing
 	
 	NATPAT	
 	
-		Network Address    : 
-		Mask		   : 30
-		Broadcast Address  : 201.123.017.255
-		Avaiable Addresses :
-		Used Addresses	   :
+		Network Address    : 201.123.017.192
+		Mask		   : 27
+		Broadcast Address  : 201.123.017.223
+		Avaiable Addresses : 201.123.017.193 - 201.123.017.222
+		Used Addresses	   : 201.123.017.193 - 201.123.017.213
 		Gateway #1	   :
 		Gateway #2	   :
 	
@@ -80,11 +85,11 @@ GR8
 
  	Office	
  	
- 		Network Address    : 201.123.017.96
-		Mask		   : 24
-		Broadcast Address  : 201.123.017.128
-		Avaiable Addresses : 201.123.017.97/24 - 201.123.017.126/24
-		Used Addresses	   : 201.123.017.97/24 - 201.123.017.118/24
+ 		Network Address    : 201.123.017.160
+		Mask		   : 27
+		Broadcast Address  : 201.123.017.191
+		Avaiable Addresses : 201.123.017.161 - 201.123.017.190
+		Used Addresses	   : 201.123.017.161 - 201.123.017.183
 		Gateway #1	   :
 		Gateway #2	   :
  	
@@ -100,11 +105,11 @@ GR8
  	
  	NATPAT	
  	
- 		Network Address    : 
-		Mask		   :
-		Broadcast Address  : 201.123.017.255
-		Avaiable Addresses :
-		Used Addresses	   :
+ 		Network Address    : 201.123.017.224 
+		Mask		   : 28
+		Broadcast Address  : 201.123.017.239
+		Avaiable Addresses : 201.123.017.225 - 201.123.017.238
+		Used Addresses	   : 201.123.017.225 - 201.123.017.234
 		Gateway #1	   :
 		Gateway #2	   :
  	
@@ -112,20 +117,20 @@ GR8
  
  	NewNet - Amazing	
  	
- 		Network Address    : 
+ 		Network Address    : 201.123.017.240
 		Mask		   : 30
-		Broadcast Address  :
-		Avaiable Addresses :
-		Used Addresses	   :
+		Broadcast Address  : 201.123.017.243
+		Avaiable Addresses : 201.123.017.241 - 201.123.017.242
+		Used Addresses	   : 201.123.017.241 - 201.123.017.242
 		Gateway #1	   :
 		Gateway #2	   :
  	
  	NewNet - GR8	
  	
- 		Network Address    : 
+ 		Network Address    : 201.123.017.244
 		Mask		   : 30
-		Broadcast Address  :
-		Avaiable Addresses :
-		Used Addresses	   :
+		Broadcast Address  : 201.123.017.247
+		Avaiable Addresses : 201.123.017.245 - 201.123.017.246
+		Used Addresses	   : 201.123.017.245 - 201.123.017.246
 		Gateway #1	   :
 		Gateway #2	   :

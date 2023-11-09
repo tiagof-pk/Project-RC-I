@@ -1,6 +1,29 @@
 117823
-IPv6: 2002:8882:7827:1100::/56 
+IPv6: 2002:8882:7827:1100:0000:0000:0000:0000/56 
 
+
+
+	/64 - NewNetCenter 	2002:8882:7827:1100:: -  2002:8882:7827:1100:0fff:ffff:ffff:ffff   
+	
+	/64 - NewNetIT 		2002:8882:7827:1100:: -  2002:8882:7827:1100:1fff:ffff:ffff:ffff
+	
+	/60 - Amazing Inc 	2002:8882:7827:1101:: -  2002:8882:7827:1101:ffff:ffff:ffff:ffff
+	
+	/60 - GR8 Inc 		2002:8882:7827:1102:: -  2002:8882:7827:1102:ffff:ffff:ffff:ffff
+	
+       /126 - Interconnections
+       	      Amazing
+       	      
+       /126 - Interconnections
+       	      GR8
+       	      
+       /126 - Amazing
+       	      ESW#1
+       	      
+       /126 - Amazing 
+       	      ESW#2
+       	      
+       	      
 --------------------------TABLE---------------------------------
 	
 NEWNET
@@ -8,20 +31,20 @@ NEWNET
 	NewNetCenter-
 	
 		Network Address    : 2002:8882:7827:1100::
-		Mask		   : 56
-		Broadcast Address  : 201.123.017.255
-		Avaiable Addresses : 2002:8882:7827:1100::1 - 2002:8882:7827:1100::ffff
-		Used Addresses	   : 201.123.017.0/24 - 201.123.017.50/24 
+		Mask		   : 64
+		Broadcast Address  : 2002:8882:7827:1100:fff:ffff:ffff:fffe 
+		Avaiable Addresses : 2002:8882:7827:1100::1 - 2002:8882:7827:1100:0fff:ffff:ffff:fffd  
+		Used Addresses	   : 
 		Gateway #1	   : 
 		Gateway #2	   :
 	
 	NewNetIT 	
 	
-		Network Address    : 2002:8882:7827:1100::
-		Mask		   : 56
-		Broadcast Address  :
-		Avaiable Addresses : 201.123.017.64/24 - 201.123.017.96/24 
-		Used Addresses	   : 201.123.017.64/24 - 201.123.017.80/24 
+		Network Address    : 2002:8882:7827:1100:1000::
+		Mask		   : 64
+		Broadcast Address  : 2002:8882:7827:1100:1fff:ffff:ffff:fffe  
+		Avaiable Addresses : 2002:8882:7827:1100:1000::1 - 2002:8882:7827:1100:1fff:ffff:ffff:fffd 
+		Used Addresses	   :  
 		Gateway #1	   :
 		Gateway #2	   :
 
@@ -29,20 +52,20 @@ Amazing
 
 	Offices 
 		
-		Network Address    : 
-		Mask		   : 24
-		Broadcast Address  : 
-		Avaiable Addresses : 201.123.017.192/24 - 201.123.017.255/24
-		Used Addresses	   : 201.123.017.192/24 - 201.123.017.252/24
+		Network Address    : 2002:8882:7827:1101::
+		Mask		   : 64
+		Broadcast Address  : 2002:8882:7827:1101:0fff:ffff:ffff:fffe  
+		Avaiable Addresses : 2002:8882:7827:1101::1 - 2002:8882:7827:1100:0fff:ffff:ffff:fffd  
+		Used Addresses	   : 
 		Gateway #1	   :
 		Gateway #2	   :
 	
 	Wifi	
 	
-		Network Address    : 
-		Mask		   : 24
-		Broadcast Address  : 
-		Avaiable Addresses :
+		Network Address    : 2002:8882:7827:1101::
+		Mask		   : 64
+		Broadcast Address  : 2002:8882:7827:1101:1fff:ffff:ffff:fffe  
+		Avaiable Addresses : 2002:8882:7827:1101:1000::1 - 2002:8882:7827:1101:1fff:ffff:ffff:fffd   
 		Used Addresses	   :
 		Gateway #1	   :
 		Gateway #2	   :
@@ -57,66 +80,67 @@ Amazing
 		Gateway #1	   :
 		Gateway #2	   :
 	
-	NATPAT	
+	Interconnection
 	
-		Network Address    : 
-		Mask		   : 30
-		Broadcast Address  : 201.123.017.255
-		Avaiable Addresses :
-		Used Addresses	   :
-		Gateway #1	   :
-		Gateway #2	   :
+		Amazing -
+		ESW#1		Network Address    : 
+				Mask		   : 126
+				Broadcast Address  : 
+				Avaiable Addresses :
+				Used Addresses	   :
+				Gateway #1	   :
+				Gateway #2	   :
+				
+				
+		Amazing -
+		ESW#2		Network Address    : 
+				Mask		   : 126
+				Broadcast Address  : 
+				Avaiable Addresses : 
+				Used Addresses	   :
+				Gateway #1	   :
+				Gateway #2	   :
 	
 GR8	
 
  	Office	
  	
- 		Network Address    : 
-		Mask		   : 24
-		Broadcast Address  : 
-		Avaiable Addresses : 201.123.017.96/24 - 201.123.017.128/24
-		Used Addresses	   : 201.123.017.96/24 - 201.123.017.118/24
+ 		Network Address    : 2002:8882:7827:1102::  
+		Mask		   : 64
+		Broadcast Address  : 2002:8882:7827:1102:fff:ffff:ffff:fffe  
+		Avaiable Addresses : 2002:8882:7827:1102::1 - 2002:8882:7827:1102:fff:ffff:ffff:fffd    
+		Used Addresses	   : 
 		Gateway #1	   :
 		Gateway #2	   :
  	
  	Wifi	
  	
- 		Network Address    : 
-		Mask		   :
-		Broadcast Address  :
-		Avaiable Addresses :
+ 		Network Address    : 2002:8882:7827:1102:1000::  
+		Mask		   : 64
+		Broadcast Address  : 2002:8882:7827:1101:1fff:ffff:ffff:fffe
+		Avaiable Addresses : 2002:8882:7827:1101:1000::1 - 2002:8882:7827:1101:1fff:ffff:ffff:fffd    
 		Used Addresses	   :
-		Gateway #1	   :
-		Gateway #2	   :
- 	
- 	NATPAT	
- 	
- 		Network Address    : 
-		Mask		   :
-		Broadcast Address  : 201.123.017.255
-		Avaiable Addresses :
-		Used Addresses	   :
-		Gateway #1	   :
+		Gateway #1	   : 
 		Gateway #2	   :
  	
  Interconnection
  
  	NewNet - Amazing	
  	
- 		Network Address    : 
-		Mask		   : 30
-		Broadcast Address  :
-		Avaiable Addresses :
-		Used Addresses	   :
+ 		Network Address    : 2002:8882:7827:1103:: 
+		Mask		   : 126
+		Broadcast Address  : 2002:8882:7827:1103::fe 
+		Avaiable Addresses : 2002:8882:7827:1103::1 - 2002:8882:7827:1103::fd 
+		Used Addresses	   : 
 		Gateway #1	   :
 		Gateway #2	   :
  	
  	NewNet - GR8	
  	
- 		Network Address    : 
-		Mask		   : 30
-		Broadcast Address  :
-		Avaiable Addresses :
+ 		Network Address    : 2002:8882:7827:1103:1000::
+		Mask		   : 126
+		Broadcast Address  : 2002:8882:7827:1103:1000::fe 
+		Avaiable Addresses : 2002:8882:7827:1103:1000::1 - 2002:8882:7827:1103:1000::fe 
 		Used Addresses	   :
 		Gateway #1	   :
 		Gateway #2	   :
