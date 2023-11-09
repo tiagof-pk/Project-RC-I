@@ -3,17 +3,18 @@
 private IPv4 : 
 	
 NEWNET
-	NewNetCenter	: 
-	NewNetIT 	: 
+	NewNetCenter	: not existing
+	NewNetIT 	: not existing
 
 Amazing		Private IP : 10.073.64.0/20
 
-	Offices : 
+	Factory : 10.073.64.0 - 10.073.72.0 / 21
+
+	Wifi	: 10.073.72.0 - 10.73.76.0 /22
 	
-	Wifi	:
+	Offices : 10.073.76.0 - 10.73.78.0 /23
 	
-	Factory :
-	
+	Routers : 10.073.78.0 - 10.73.78.4 /30
 	Interconnection
 	Amazing - ESW#1 :
 	
@@ -22,7 +23,7 @@ Amazing		Private IP : 10.073.64.0/20
 	
 GR8	Private IP : 10.178.086.0/23
  	
- 	Office	:
+ 	Office	: 10.178.086.0 /24
  	
- 	wifi	:
+ 	wifi	: 10.178.087.0 /24
 
