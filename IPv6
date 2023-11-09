@@ -1,0 +1,123 @@
+117823
+IPv6: 2002:8882:7827:1100::/56 
+
+--------------------------TABLE---------------------------------
+	
+NEWNET
+
+	NewNetCenter-
+	
+		Network Address    : 2002:8882:7827:1100::
+		Mask		   : 56
+		Broadcast Address  : 201.123.017.255
+		Avaiable Addresses : 2002:8882:7827:1100::1 - 2002:8882:7827:1100::ffff
+		Used Addresses	   : 201.123.017.0/24 - 201.123.017.50/24 
+		Gateway #1	   : 
+		Gateway #2	   :
+	
+	NewNetIT 	
+	
+		Network Address    : 2002:8882:7827:1100::
+		Mask		   : 56
+		Broadcast Address  :
+		Avaiable Addresses : 201.123.017.64/24 - 201.123.017.96/24 
+		Used Addresses	   : 201.123.017.64/24 - 201.123.017.80/24 
+		Gateway #1	   :
+		Gateway #2	   :
+
+Amazing	
+
+	Offices 
+		
+		Network Address    : 
+		Mask		   : 24
+		Broadcast Address  : 
+		Avaiable Addresses : 201.123.017.192/24 - 201.123.017.255/24
+		Used Addresses	   : 201.123.017.192/24 - 201.123.017.252/24
+		Gateway #1	   :
+		Gateway #2	   :
+	
+	Wifi	
+	
+		Network Address    : 
+		Mask		   : 24
+		Broadcast Address  : 
+		Avaiable Addresses :
+		Used Addresses	   :
+		Gateway #1	   :
+		Gateway #2	   :
+	
+	Factory 
+	
+		Network Address    : 
+		Mask		   :
+		Broadcast Address  :
+		Avaiable Addresses :
+		Used Addresses	   :
+		Gateway #1	   :
+		Gateway #2	   :
+	
+	NATPAT	
+	
+		Network Address    : 
+		Mask		   : 30
+		Broadcast Address  : 201.123.017.255
+		Avaiable Addresses :
+		Used Addresses	   :
+		Gateway #1	   :
+		Gateway #2	   :
+	
+GR8	
+
+ 	Office	
+ 	
+ 		Network Address    : 
+		Mask		   : 24
+		Broadcast Address  : 
+		Avaiable Addresses : 201.123.017.96/24 - 201.123.017.128/24
+		Used Addresses	   : 201.123.017.96/24 - 201.123.017.118/24
+		Gateway #1	   :
+		Gateway #2	   :
+ 	
+ 	Wifi	
+ 	
+ 		Network Address    : 
+		Mask		   :
+		Broadcast Address  :
+		Avaiable Addresses :
+		Used Addresses	   :
+		Gateway #1	   :
+		Gateway #2	   :
+ 	
+ 	NATPAT	
+ 	
+ 		Network Address    : 
+		Mask		   :
+		Broadcast Address  : 201.123.017.255
+		Avaiable Addresses :
+		Used Addresses	   :
+		Gateway #1	   :
+		Gateway #2	   :
+ 	
+ Interconnection
+ 
+ 	NewNet - Amazing	
+ 	
+ 		Network Address    : 
+		Mask		   : 30
+		Broadcast Address  :
+		Avaiable Addresses :
+		Used Addresses	   :
+		Gateway #1	   :
+		Gateway #2	   :
+ 	
+ 	NewNet - GR8	
+ 	
+ 		Network Address    : 
+		Mask		   : 30
+		Broadcast Address  :
+		Avaiable Addresses :
+		Used Addresses	   :
+		Gateway #1	   :
+		Gateway #2	   :
+
