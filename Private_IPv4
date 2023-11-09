@@ -12,36 +12,36 @@ Amazing		Private IP : 10.073.64.0/20
 		Network Address    : 10.073.64.0
 			Mask		   : /21
 			Broadcast Address  : 10.73.71.255
-			Avaiable Addresses : 10.73.64.1 - 10.73.71.254
-			Used Addresses	   : 1100 - 2000 (2048)
-			Gateway #1	   : AmazL3SW1
-			Gateway #2	   : AmazL3SW2
+			Available Addresses : 10.73.64.1 - 10.73.71.254
+			Used Addresses	   : 10.73.64.1 - 10.73.71.254
+			Gateway #1	   : 
+			Gateway #2	   : 
 
 	Wifi	: 10.073.72.0 - 10.73.76.0 /22
 			Network Address    : 10.073.72.0
 			Mask		   : /22
 			Broadcast Address  : 10.073.75.255
-			Avaiable Addresses : 10.073.72.1 - 10.073.75.254
-			Used Addresses	   : 600 - 1000 (1024)
-			Gateway #1	   : AmazL3SW1
-			Gateway #2	   : AmazL3SW2
+			Available Addresses : 10.073.72.1 - 10.073.75.254
+			Used Addresses	   : 10.073.72.1 - 10.073.75.254
+			Gateway #1	   : 
+			Gateway #2	   : 
 
 	Offices : 10.073.76.0 - 10.73.78.0 /23
 			Network Address    : 10.073.76.0
 			Mask		   : /23
 			Broadcast Address  : 10.073.77.255
-			Avaiable Addresses : 10.073.76.1 - 10.073.77.254
-			Used Addresses	   : <500  (512)
-			Gateway #1	   : AmazL3SW1
-			Gateway #2	   : AmazL3SW2
+			Available Addresses : 10.073.76.1 - 10.073.77.254
+			Used Addresses	   : 10.073.76.1 - 10.073.77.254
+			Gateway #1	   : 
+			Gateway #2	   : 
 	
 	Interconnection
 	Amazing - ESW#1 : 10.073.78.0 - 10.73.78.4 /30
 			Network Address    : 10.073.78.0
 			Mask		   : /30
 			Broadcast Address  : 10.073.78.3
-			Avaiable Addresses : 10.073.78.1 - 10.073.78.2
-			Used Addresses	   : 1 (2)
+			Available Addresses : 10.073.78.1 - 10.073.78.2
+			Used Addresses	   : 10.073.78.1 - 10.073.78.2
 			Gateway #1	   : 
 			Gateway #2	   :
 
@@ -50,8 +50,8 @@ Amazing		Private IP : 10.073.64.0/20
 			Network Address    : 10.073.78.4
 			Mask		   : /30
 			Broadcast Address  : 10.73.78.7
-			Avaiable Addresses : 10.73.78.5 - 10.73.78.6
-			Used Addresses	   : 1 (2)
+			Available Addresses : 10.73.78.5 - 10.73.78.6
+			Used Addresses	   : 10.73.78.5 - 10.73.78.6
 			Gateway #1	   : 
 			Gateway #2	   :
 	
@@ -62,8 +62,8 @@ GR8	Private IP : 10.178.086.0/23
 			Network Address    : 10.178.086.0
 			Mask		   : /24
 			Broadcast Address  : 10.178.086.255
-			Avaiable Addresses : 10.178.086.1 - 10.178.086.254
-			Used Addresses	   : 254
+			Available Addresses : 10.178.086.1 - 10.178.086.254
+			Used Addresses	   : 10.178.086.1 - 10.178.086.254
 			Gateway #1	   : 
 			Gateway #2	   :
  	
@@ -71,8 +71,8 @@ GR8	Private IP : 10.178.086.0/23
 			Network Address    : 10.073.78.0
 			Mask		   : /24
 			Broadcast Address  : 10.178.087.255
-			Avaiable Addresses : 10.178.087.1 - 10.178.087.254
-			Used Addresses	   : 254
+			Available Addresses : 10.178.087.1 - 10.178.087.254
+			Used Addresses	   : 10.178.087.1 - 10.178.087.254
 			Gateway #1	   : 
 			Gateway #2	   :
 
