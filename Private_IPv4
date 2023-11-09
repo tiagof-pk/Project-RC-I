@@ -14,8 +14,8 @@ Amazing		Private IP : 10.073.64.0/20
 			Broadcast Address  : 10.73.71.255
 			Avaiable Addresses : 10.73.64.1 - 10.73.71.254
 			Used Addresses	   : 1100 - 2000 (2048)
-			Gateway #1	   : 
-			Gateway #2	   :
+			Gateway #1	   : AmazL3SW1
+			Gateway #2	   : AmazL3SW2
 
 	Wifi	: 10.073.72.0 - 10.73.76.0 /22
 			Network Address    : 10.073.72.0
@@ -23,9 +23,17 @@ Amazing		Private IP : 10.073.64.0/20
 			Broadcast Address  : 10.073.75.255
 			Avaiable Addresses : 10.073.72.1 - 10.073.75.254
 			Used Addresses	   : 600 - 1000 (1024)
-			Gateway #1	   : 
-			Gateway #2	   :
+			Gateway #1	   : AmazL3SW1
+			Gateway #2	   : AmazL3SW2
+
 	Offices : 10.073.76.0 - 10.73.78.0 /23
+			Network Address    : 10.073.76.0
+			Mask		   : /23
+			Broadcast Address  : 10.073.77.255
+			Avaiable Addresses : 10.073.76.1 - 10.073.77.254
+			Used Addresses	   : <500  (512)
+			Gateway #1	   : AmazL3SW1
+			Gateway #2	   : AmazL3SW2
 	
 	Interconnection
 	Amazing - ESW#1 : 10.073.78.0 - 10.73.78.4 /30
